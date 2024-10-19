@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', Arial, san-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  /* border: 1px solid black; */
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header .logo img {
+  width: 98px;
+  border-radius: 50%;
+}
+
+header .logo .title-logo-navigation {
+  font-size: 2rem;
+  font-weight: bold;
+  /* font-style: italic; */
+}
+
+/* header nav {
+  border: 1px solid black;
+} */
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 0;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+header nav ul li a:hover {
+  border-radius: 999px;
+  color: white;
+  background-color: black;
+}
